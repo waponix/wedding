@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Yellowtail&display=swap&family=Parisienne&display=swap&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import './base.css';
+
+body {
+  overflow-x: hidden;
+  background-color: #e2e2e2;
+  color: #0C0D0D;
+  line-height: 2rem !important;
+}
+
+.parallax {
+  perspective: 1px;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.parallax-background {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  transform: translateZ(-1px) scale(2);
+  z-index: -1;
+}
+
+.parallax-section {
+  transform: translateZ(0px);
+  z-index: 1;
+}
